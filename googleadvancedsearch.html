@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="top">
+            <div class="right">
+                <a class="ele" href="index.html">Google Search</a>
+            </div>
+            <div class="right">
+                <a class="ele" href="googleimagesearch.html">Image Search</a>
+            </div>
+           
+        </div>
+        <div class="appbar"> <label style="margin-left:10px ">Advanced Search</label>    </div>
+        <div class="line" style="border-bottom: 1px solid #ebebeb ;" ></div>
+        <div style="max-width: 1140px;
+        min-width: 200px;
+        width: 96%;
+        margin: 40px 2% 0 45px;">
+            <form action="https://google.com/search" >
+                <div >Find Pages With....</div><br>
+                    <div >
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">all these words:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputPassword" name="as_q">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">this exact word or phrase:</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputPassword" name="as_epq">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">any of these words:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputPassword" name="as_oq">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">none of these words:</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputPassword" name="as_eq">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">numbers ranging from:</label>
+                            <div class="col-sm-4">
+                              <input id="number" type="text" class="form-control" id="inputPassword" name="as_nlo">
+                            </div>
+                            <div class=" col-sm-2" style="text-align: center;">to</div>
+                            <div class="col-sm-4">
+                              <input id="number" type="text" class="form-control" id="inputPassword" name="as_nhi">
+                            </div>
+                        </div>
+                    </div>
+                <div class="line1" style="margin: 18px 0;
+                clear: both;
+                border-top: 1px solid #ebebeb;"
+                  <div>Then narrow your results by...</div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">language:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example" name="lr">
+                        <option selected>any language</option>
+                        <option value="Afrikaans">Afrikaans</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="Armenian">Armenian</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">region:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example" name="cr">
+                        <option selected>any region</option>
+                        <option value="any region">any region</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Alabania">Alabania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="India">India</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">last update:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example" name="as_qdr">
+                        <option selected>anytime</option>
+                        <option value="anytime">anytime</option>
+                        <option value="last 24 hours">last 24 hours</option>
+                        <option value="upto a week ago">upto a week ago</option>
+                        <option value="upto a month ago">upto a month ago</option>
+                        <option value="upto a year ago">upto a year ago</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div >
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">site or domain:</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputPassword" name="as_sitesearch">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">terms appearing:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example" name="as_occt">
+                        <option selected>anywhere in the page</option>
+                        <option value="anywhere in the page">anywhere in the page</option>
+                        <option value="in the title of the page">in the title of the page</option>
+                        <option value="in the text of the page">in the text of the page</option>
+                        <option value="in the URL of the page">in the URL of the page</option>
+                        <option value="in links of the page">in links of the page</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"><a style="text-decoration: none;" href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637570268121258808-1992719331&rd=1">Safe Search:</a></label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example" name="safe">
+                        <option selected>Hide explicit results</option>
+                        <option value="Show explicit results">Show explicit results</option>
+                        <option value="Hide explicit results">Hide explicit results</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">file type:</label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example" name="as_filetype">
+                        <option selected>any format</option>
+                        <option value="Adobe Acrobat PDF (.pdf)">Adobe Acrobat PDF (.pdf)</option>
+                        <option value="Adobe Postscript (.ps)">Adobe Postscript (.ps)</option>
+                        <option value="Autodesk DWF (.dwf)">Autodesk DWF (.dwf)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"><a style="text-decoration: none;" href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637570268121258808-1992719331&rd=1">usage rights:</a></label>
+                    <div class="col-sm-10">
+                      <select class="form-select" aria-label="Default select example" name="tbs">
+                        <option selected>not filtered by licence</option>
+                        <option value="not filtered by licence">not filtered by licence</option>
+                        <option value="free to use or share">free to use or share</option>
+                        <option value="free to use or share, even commercially">free to use or share, even commercially</option>
+                        <option value="free to use share or modify">free to use share or modify</option>
+                        <option value="free to use, share or modify, even comercially">free to use, share or modify, even comercially</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-primary buttonadv">Advanced Search</button>
+                  </div>
+              </form>
+        </div>
+        
+    </body>
+</html>
